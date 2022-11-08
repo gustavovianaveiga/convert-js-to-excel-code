@@ -1,4 +1,12 @@
-function Download() {
+var imported = document.createElement('script');
+imported.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+document.head.appendChild(imported);
+
+const Download = () => {
+
+
+
+
     const wb = XLSX.utils.book_new();
 
     wb.Props = {
